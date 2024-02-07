@@ -48,4 +48,12 @@ public class BankAccount {
         this.accountNumber = newAccountNumber;
     }
 
+    public int getBalance() {
+        return this.balance;
+    }
+
+    public void setBalance(int newBalance) {
+        this.balance = newBalance;
+    }
+
 }
