@@ -88,4 +88,12 @@ public class BankAccountTest {
         int actual_value = account.getBalance();
         assertThat(actual_value).isEqualTo(expect_value);
     }
+
+    @Test
+    public void canDeposit() {
+        int expected_val = 1000;
+        account.deposit(1000);
+        int actual_val = account.getBalance();
+        assertThat(actual_val).isEqualTo(expected_val);
+    }
 }
