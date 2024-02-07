@@ -32,4 +32,12 @@ public class BankAccount {
         this.lastName = changedLastName;
     }
 
+    public String getDateOfBirth() {
+        return this.dateOfBirth;
+    }
+
+    public void setDateOfBirth(String newDOB) {
+        this.dateOfBirth = newDOB;
+    }
+
 }
