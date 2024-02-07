@@ -97,4 +97,12 @@ public class BankAccountTest {
         assertThat(actual_val).isEqualTo(expected_val);
     }
 
+    @Test
+    public void canWithdraw() {
+        int expected_val = -100;
+        account.withdrawal(100);
+        int actual_val = account.getBalance();
+        assertThat(actual_val).isEqualTo(expected_val);
+    }
+
 }
