@@ -15,6 +15,7 @@ public class BankAccount {
         this.balance = 0;
         this.dateOfBirth = dateOfBirth;
         this.accountType = "savings";
+        this.overdraft = 100;
     }
 
     // Getters and Setters

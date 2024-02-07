@@ -105,6 +105,21 @@ public class BankAccountTest {
     }
 
     @Test
+    public void canGetOverdraft() {
+        double expected = 100;
+        double actual = account.getOverdraft();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
+    public void canSetOverdraft() {
+        double expected = 200;
+        account.setOverdraft(200);
+        double actual = account.getOverdraft();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
     public void canDeposit() {
         double expected_val = 1000;
         account.deposit(1000);
