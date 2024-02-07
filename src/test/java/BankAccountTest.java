@@ -154,4 +154,12 @@ public class BankAccountTest {
         assertThat(expected_val).isEqualTo(actual_val);
     }
 
+    @Test
+    public void canWithdraw_accountingOverdraft() {
+        double expected_val = -100;
+        account.withdrawal(200);
+        double actual_val = account.getBalance();
+        assertThat(actual_val).isEqualTo(expected_val);
+    }
+
 }

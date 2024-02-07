@@ -84,9 +84,9 @@ public class BankAccount {
     //Withdrawal method
     public void withdrawal(int val) {
         if ((this.balance - val) > (0-overdraft)){
-            this.balance = 0-overdraft;
-        } else {
             this.balance -= val;
+        } else {
+            this.balance = 0-overdraft;
         }
     }
 
