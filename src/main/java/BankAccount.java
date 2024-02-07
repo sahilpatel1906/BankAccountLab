@@ -6,6 +6,7 @@ public class BankAccount {
     private int accountNumber;
     private double balance;
     private String accountType;
+    private double overdraft;
 
     public BankAccount(String firstName, String lastName, String dateOfBirth) {
         this.firstName = firstName;
@@ -32,6 +33,14 @@ public class BankAccount {
 
     public void setLastName(String changedLastName) {
         this.lastName = changedLastName;
+    }
+
+    public double getOverdraft() {
+        return this.overdraft;
+    }
+
+    public void setOverdraft(double newOverdraft) {
+        this.overdraft = newOverdraft;
     }
 
     public String getDateOfBirth() {
