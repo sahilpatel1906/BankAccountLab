@@ -79,7 +79,17 @@ public class BankAccount {
     //Interest method
     public void addInterest() {
         double savings_interest = 1.02;
-        this.balance *= savings_interest;
+        double current_interest = 1.04;
+        double interest = 1;
+        switch (accountType) {
+            case "savings":
+                interest = savings_interest;
+                break;
+            case "current_interest":
+                interest = current_interest;
+                break;
+        }
+        this.balance *= interest;
     }
 
 }
