@@ -66,7 +66,7 @@ public class BankAccount {
         this.balance -= val;
     }
 
-    public void getInterest() {
+    public void addInterest() {
         double savings_interest = 1.02;
         this.balance *= savings_interest;
     }

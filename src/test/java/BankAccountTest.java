@@ -105,4 +105,13 @@ public class BankAccountTest {
         assertThat(actual_val).isEqualTo(expected_val);
     }
 
+    @Test
+    public void canAddInterest() {
+        account.setBalance(1000);
+        double expected_val = 1020;
+        account.addInterest();
+        double actual_val = account.getBalance();
+        assertThat(expected_val).isEqualTo(actual_val);
+    }
+
 }
