@@ -85,7 +85,7 @@ public class BankAccount {
             case "savings":
                 interest = savings_interest;
                 break;
-            case "current_interest":
+            case "current":
                 interest = current_interest;
                 break;
         }

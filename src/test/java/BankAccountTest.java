@@ -129,4 +129,14 @@ public class BankAccountTest {
         assertThat(expected_val).isEqualTo(actual_val);
     }
 
+    @Test
+    public void canAddInterst_differentAccountType() {
+        account.setBalance(1000);
+        double expected_val = 1040;
+        account.setAccountType("current");
+        account.addInterest();
+        double actual_val = account.getBalance();
+        assertThat(expected_val).isEqualTo(actual_val);
+    }
+
 }
