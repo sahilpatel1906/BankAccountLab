@@ -90,6 +90,21 @@ public class BankAccountTest {
     }
 
     @Test
+    public void canGetAccountType() {
+        String expected = "savings";
+        String actual = account.getAccountType();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
+    public void canSetAccountType() {
+        String expected = "current";
+        account.setAccountType("current");
+        String actual = account.getAccountType();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
     public void canDeposit() {
         double expected_val = 1000;
         account.deposit(1000);
