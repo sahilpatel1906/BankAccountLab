@@ -58,4 +58,19 @@ public class BankAccountTest {
         String actual = account.getDateOfBirth();
         assertThat(actual).isEqualTo(expected);
     }
+
+    @Test
+    public void canGetAccountNumber() {
+        int expected_value = 0;
+        int actual_value = account.getAccountNumber();
+        assertThat(actual_value).isEqualTo(expected_value);
+    }
+
+    @Test
+    public void canSetAccountNumber() {
+        int expected_value = 1;
+        account.setAccountNumber(1);
+        int actual_value = account.getAccountNumber();
+        assertThat(actual_value).isEqualTo(expected_value);
+    }
 }
