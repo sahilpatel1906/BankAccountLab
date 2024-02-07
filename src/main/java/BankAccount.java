@@ -40,4 +40,12 @@ public class BankAccount {
         this.dateOfBirth = newDOB;
     }
 
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    public void setAccountNumber(int newAccountNumber) {
+        this.accountNumber = newAccountNumber;
+    }
+
 }
