@@ -56,4 +56,10 @@ public class BankAccount {
         this.balance = newBalance;
     }
 
+
+    //Deposit method
+    public void deposit(int val) {
+        this.balance += val;
+    }
+
 }
