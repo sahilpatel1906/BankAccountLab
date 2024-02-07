@@ -96,4 +96,5 @@ public class BankAccountTest {
         int actual_val = account.getBalance();
         assertThat(actual_val).isEqualTo(expected_val);
     }
+
 }

@@ -62,4 +62,8 @@ public class BankAccount {
         this.balance += val;
     }
 
+    public void withdrawal(int val) {
+        this.balance -= val;
+    }
+
 }
