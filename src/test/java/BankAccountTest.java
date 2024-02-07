@@ -76,32 +76,32 @@ public class BankAccountTest {
 
     @Test
     public void canGetAccountBalance() {
-        int expected_value = 0;
-        int actual_value = account.getBalance();
+        double expected_value = 0;
+        double actual_value = account.getBalance();
         assertThat(actual_value).isEqualTo(expected_value);
     }
 
     @Test
     public void canSetBalance() {
-        int expect_value = 500;
+        double expect_value = 500;
         account.setBalance(500);
-        int actual_value = account.getBalance();
+        double actual_value = account.getBalance();
         assertThat(actual_value).isEqualTo(expect_value);
     }
 
     @Test
     public void canDeposit() {
-        int expected_val = 1000;
+        double expected_val = 1000;
         account.deposit(1000);
-        int actual_val = account.getBalance();
+        double actual_val = account.getBalance();
         assertThat(actual_val).isEqualTo(expected_val);
     }
 
     @Test
     public void canWithdraw() {
-        int expected_val = -100;
+        double expected_val = -100;
         account.withdrawal(100);
-        int actual_val = account.getBalance();
+        double actual_val = account.getBalance();
         assertThat(actual_val).isEqualTo(expected_val);
     }
 

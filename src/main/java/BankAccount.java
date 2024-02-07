@@ -4,7 +4,7 @@ public class BankAccount {
     private String lastName;
     private String dateOfBirth;
     private int accountNumber;
-    private int balance;
+    private double balance;
 
     public BankAccount(String firstName, String lastName, String dateOfBirth) {
         this.firstName = firstName;
@@ -48,11 +48,11 @@ public class BankAccount {
         this.accountNumber = newAccountNumber;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return this.balance;
     }
 
-    public void setBalance(int newBalance) {
+    public void setBalance(double newBalance) {
         this.balance = newBalance;
     }
 
@@ -64,6 +64,11 @@ public class BankAccount {
 
     public void withdrawal(int val) {
         this.balance -= val;
+    }
+
+    public void getInterest() {
+        double savings_interest = 1.02;
+        this.balance *= savings_interest;
     }
 
 }
